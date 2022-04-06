@@ -1,0 +1,14 @@
+@use '../../library';
+.navbar-container{
+    width: 100%;
+    padding: library.$small;
+    background: lighten($color: library.$voilet, $amount: 15);
+    a{
+        text-decoration: none;
+        font-size: library.$lf;
+        font-weight: 700;
+        color: black;
+    }:last-child{
+        margin-left: 2em;
+    }
+    }

@@ -1,0 +1,43 @@
+@use '../../library';
+.home-container{
+    height: 100%;
+    width: 100%;
+.filter-section{
+    width: 80%;
+    margin: auto;
+    padding: library.$small;
+    label{
+        font-size: library.$mf;
+    }
+    select{
+        width:max( 15%,150px) ;
+        padding: library.$vsmall;
+        font-size: library.$sf;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+
+}
+.list-container{
+    width: 100%;
+    padding: library.$vsmall;
+    display: flex;
+    flex-direction: column;
+    gap: library.$vsmall;
+.each-item{
+        background-color: aqua;
+        padding: library.$vsmall;border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: 0.2s ease-in;
+    }
+    .each-item:hover{
+        background-color: rgba(14, 235, 235, 0.795);
+        transition: 0.2s ease-in;
+
+    }
+}
+}
